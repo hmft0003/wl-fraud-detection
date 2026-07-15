@@ -1,0 +1,23 @@
+# --- Data (large, and the Elliptic licence restricts redistribution) ---
+data/
+*.csv
+
+# --- Notebook noise ---
+.ipynb_checkpoints/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# --- Models / caches ---
+*.pth
+*.pkl
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
