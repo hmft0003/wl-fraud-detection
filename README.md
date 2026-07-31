@@ -39,8 +39,7 @@ Random Forest and the Cora GCN likewise reproduce published figures.
 The datasets are not included in this repository (large, and the Elliptic
 licence restricts redistribution).
 
-**Elliptic Bitcoin dataset** — download from Kaggle
-(`ellipticco/elliptic-data-set`) and place these three files in `data/`:
+**Elliptic Bitcoin dataset** - download from Kaggle [Elliptic Data set](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set) and place these three files in `data/`:
 
 ```
 data/elliptic_txs_features.csv
