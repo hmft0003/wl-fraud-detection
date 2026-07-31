@@ -18,7 +18,7 @@ positive control where graph signal is known to be strong, the same pipeline
 recovers a large share of the gap to the GCN, confirming the method is sound.
 The result on Elliptic is therefore a property of the data, not of the method.
 
-The GCN reproduces the illicit F1 of 0.628 reported by Weber et al. (2019); the
+The GCN reproduces the illicit F1 of 0.628 reported by Weber et al. (2019), the
 Random Forest and the Cora GCN likewise reproduce published figures.
 
 ## Repository layout
