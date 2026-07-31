@@ -11,9 +11,9 @@ compare with a Graph Convolutional Network (GCN) baseline?
 ## Summary of findings
 
 1-WL recovers roughly half of the available neighbourhood signal on both
-datasets tested. On the Elliptic Bitcoin dataset that signal is small — the
+datasets tested. On the Elliptic Bitcoin dataset that signal is small the
 graph is sparse (mean degree 2.3) and the node features are already highly
-informative — so no neighbourhood aggregation gains much. On Cora, used as a
+informative so no neighbourhood aggregation gains much. On Cora, used as a
 positive control where graph signal is known to be strong, the same pipeline
 recovers a large share of the gap to the GCN, confirming the method is sound.
 The result on Elliptic is therefore a property of the data, not of the method.
@@ -30,6 +30,7 @@ Random Forest and the Cora GCN likewise reproduce published figures.
 ├── .gitignore
 ├── notebooks/
 │   └── wl_vs_gcn_fraud_detection.ipynb   # main experiments
+│   └── figures
 └── data/                                 # NOT tracked — see below
 ```
 
