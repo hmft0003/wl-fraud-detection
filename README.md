@@ -51,13 +51,6 @@ data/elliptic_txs_edgelist.csv
 
 ## Reproducing the results
 
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter notebook notebooks/wl_vs_gcn_fraud_detection.ipynb
-```
-
 Run the notebook top to bottom. A fixed random seed (42) makes every result
 reproducible.
 
