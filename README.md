@@ -56,11 +56,11 @@ reproducible.
 
 ## References
 
-- Weber et al. (2019). *Anti-Money Laundering in Bitcoin: Experimenting with
+- [Weber et al. (2019)](https://arxiv.org/abs/1908.02591). *Anti-Money Laundering in Bitcoin: Experimenting with
   Graph Convolutional Networks for Financial Forensics.* KDD Workshop on
   Anomaly Detection in Finance.
-- Kipf & Welling (2017). *Semi-Supervised Classification with Graph
+- [Kipf & Welling (2017)](https://arxiv.org/abs/1609.02907). *Semi-Supervised Classification with Graph
   Convolutional Networks.* ICLR.
-- Xu et al. (2019). *How Powerful are Graph Neural Networks?* ICLR.
-- Corso et al. (2020). *Principal Neighbourhood Aggregation for Graph Nets.*
+- [Xu et al. (2019)](https://cs.stanford.edu/people/jure/pubs/gin-iclr19.pdf). *How Powerful are Graph Neural Networks?* ICLR.
+- [Corso et al. (2020)](https://arxiv.org/abs/2004.05718). *Principal Neighbourhood Aggregation for Graph Nets.*
   NeurIPS.
