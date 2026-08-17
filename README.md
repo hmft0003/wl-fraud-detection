@@ -1,7 +1,6 @@
 # 1-WL Structural Signatures vs. Graph Convolutional Networks for Fraud Detection
 
 MSc Data Science project (COMP5200M), School of Computing, University of Leeds.
-Supervisor: Dr Sebastian Ordyniak.
 
 ## Research question
 
@@ -57,7 +56,7 @@ rather than of the method.
 | Metric | This work | Published | Source |
 |---|---|---|---|
 | GCN illicit F1 (Elliptic) | 0.6208 | 0.628 | Weber et al. (2019) |
-| Random Forest illicit F1 | 0.8124 | 0.796 | Weber et al. (2019) |
+| Random Forest illicit F1 | 0.8124 | 0.788 | Weber et al. (2019) |
 | GCN accuracy (Cora) | 0.8090 | ≈0.81 | Kipf & Welling (2017) |
 
 ## Repository layout
