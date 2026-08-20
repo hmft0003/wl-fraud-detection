@@ -13,7 +13,7 @@ The Elliptic Bitcoin dataset is the object of study. Cora serves as a positive c
 
 **On predictive performance, a well-diagnosed negative result.** The relaxed 1-WL histogram improves on the local transaction features by +0.0059 AUPRC (95% CI [+0.0035, +0.0081]) — statistically significant, but small. Structural controls confirm the gain is genuinely attributable to the graph rather than to the extra feature columns: removing every edge returns the score to baseline, and randomising the edge endpoints pushes it below baseline. The signature recovers roughly half of what the dataset authors' hand-crafted neighbourhood aggregates provide, does not match them, and adds nothing once they are present. The discrete formulation over-discriminates and falls below baseline entirely.
 
-**On computational cost, a positive result.** The 1-WL pipeline is non-parametric and trains roughly six times faster than the GCN, which carries 10,754 trained parameters. Where a graph method is used on this dataset at all, the cheap signature is preferable to the expensive network.
+**On computational cost, a positive result.** The 1-WL pipeline is non-parametric and trains roughly eleven times faster than the GCN, which carries 10,754 trained parameters. Where a graph method is used on this dataset at all, the cheap signature is preferable to the expensive network.
 
 **Why the graph contributes so little.** Not a lack of homophily — adjusted for class prior, Elliptic (0.737) and Cora (0.768) are comparable. The distinguishing factors are sparsity (79% of Elliptic nodes have at most two neighbours) and feature strength (the local features already reach 0.7816 AUPRC unaided). 72 of the 165 supplied features are themselves one-hop neighbour aggregates, so the baseline already encodes much of what 1-WL computes. The identical pipeline recovers a large gain on Cora, so the small result is a property of the data rather than of the method.
 
@@ -100,7 +100,7 @@ The notebook is self-checking rather than self-reporting. Assertions run at the 
 
 Three further checks are reported in the notebook output:
 
-- **Active-column diagnostic.** With the true edges present all 320 histogram columns are active; with the edges removed only the 64 initial-colour columns survive and all 186 neighbour-mean columns become identically zero. This converts the edgeless control from an assertion into a mechanical demonstration.
+- **Active-column diagnostic.** With the true edges present all 320 histogram columns are active; with the edges removed only the 64 initial-colour columns survive and all 256 neighbour-mean columns become identically zero. This converts the edgeless control from an assertion into a mechanical demonstration.
 - **Structural controls.** Edgeless (0.7811) and randomised-edge (0.7801) variants against the full graph (0.7858) and baseline (0.7816).
 - **Two-stage GCN evaluation.** The epoch count is selected on a validation window drawn from inside the training period (t = 30–34), after which the network is retrained from scratch on the full training period. The test set is never used for model selection.
 
