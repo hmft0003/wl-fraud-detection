@@ -1,6 +1,6 @@
 # 1-WL Structural Signatures vs. Graph Convolutional Networks for Fraud Detection
 
-MSc Data Science project (COMP5200M), School of Computing, University of Leeds.
+MSc Project (COMP5200M), School of Computing, University of Leeds.
 
 ## Research question
 
